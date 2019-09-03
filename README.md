@@ -59,8 +59,8 @@ Finally we only need to tell it, where to find the application file: `-e APP_FIL
 All information about that specific builderimage can be found under following link: [Python Builderimage](https://github.com/sclorg/s2i-python-container/blob/master/3.6/README.md)
 ```
 oc new-app --name=api python:3.6~https://github.com/ev3-showcase/api-server#master \
--e MQTT_BROKER=message-broker \
--e MQTT_PORT=11883 \
+-e MQTT_BROKER=message-broker-mqtt \
+-e MQTT_PORT=1883 \
 -e APP_FILE=api.py
 ```
 
