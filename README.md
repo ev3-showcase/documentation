@@ -60,7 +60,7 @@ All information about that specific builderimage can be found under following li
 ```
 oc new-app --name=api python:3.6~https://github.com/ev3-showcase/api-server#master \
 -e MQTT_BROKER=message-broker \
--e MQTT_PORT=11883 \
+-e MQTT_PORT=1883 \
 -e APP_FILE=app.py
 ```
 
